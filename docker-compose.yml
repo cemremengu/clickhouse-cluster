@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 services:
   zookeeper:
     image: zookeeper
@@ -11,7 +11,7 @@ services:
     depends_on:
       - zookeeper
     ports:
-      - 8813:8123
+      - 8811:8123
       - 9011:9000
     volumes:
       - "/clickhouse-cluster-data/volume1:/var/lib/clickhouse"
@@ -22,7 +22,7 @@ services:
     depends_on:
       - zookeeper
     ports:
-      - 8814:8123
+      - 8812:8123
       - 9012:9000
     volumes:
       - "/clickhouse-cluster-data/volume2:/var/lib/clickhouse"
@@ -33,7 +33,7 @@ services:
     depends_on:
       - zookeeper
     ports:
-      - 8815:8123
+      - 8813:8123
       - 9013:9000
     volumes:
       - "/clickhouse-cluster-data/volume3:/var/lib/clickhouse"
