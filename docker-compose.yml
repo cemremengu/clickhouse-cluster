@@ -14,7 +14,7 @@ services:
       - 8811:8123
       - 9011:9000
     volumes:
-      - "/clickhouse-cluster-data/volume1:/var/lib/clickhouse"
+      - "/home/ttg/clickhouse-cluster/data/volume1:/var/lib/clickhouse"
   ch2:
     build:
       context: .
@@ -25,7 +25,7 @@ services:
       - 8812:8123
       - 9012:9000
     volumes:
-      - "/clickhouse-cluster-data/volume2:/var/lib/clickhouse"
+      - "/home/ttg/clickhouse-cluster/data/volume2:/var/lib/clickhouse"
   ch3:
     build:
       context: .
@@ -36,4 +36,4 @@ services:
       - 8813:8123
       - 9013:9000
     volumes:
-      - "/clickhouse-cluster-data/volume3:/var/lib/clickhouse"
+      - "/home/ttg/clickhouse-cluster/data/volume3:/var/lib/clickhouse"
