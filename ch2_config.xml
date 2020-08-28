@@ -145,7 +145,7 @@
       -->
     <!-- <macros incl="macros" optional="true" /> -->
     <macros>
-        <shard>01</shard>
+        <shard>02</shard>
         <replica>ch2</replica>
     </macros>
 
