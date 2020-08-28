@@ -3,6 +3,7 @@
         <ua_cluster>
             <!-- shard 01 -->
             <shard>
+                <internal_replication>true</internal_replication>
                 <replica>
                     <host>ch1</host>
                     <port>9000</port>
@@ -15,12 +16,26 @@
 
             <!-- shard 02 -->
             <shard>
+                <internal_replication>true</internal_replication>
+                <replica>
+                    <host>ch2</host>
+                    <port>9000</port>
+                </replica>
                 <replica>
                     <host>ch3</host>
                     <port>9000</port>
                 </replica>
+            </shard>
+
+           <!-- shard 03 -->
+            <shard>
+                <internal_replication>true</internal_replication>
                 <replica>
-                    <host>ch4</host>
+                    <host>ch1</host>
+                    <port>9000</port>
+                </replica>
+                <replica>
+                    <host>ch3</host>
                     <port>9000</port>
                 </replica>
             </shard>
