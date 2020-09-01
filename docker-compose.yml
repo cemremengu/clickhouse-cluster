@@ -11,7 +11,7 @@ services:
     depends_on:
       - zookeeper
     ports:
-      - 8811:8123
+      - 8111:8123
       - 9011:9000
     volumes:
       - "/home/ttg/clickhouse-cluster/data/volume1:/var/lib/clickhouse"
@@ -22,7 +22,7 @@ services:
     depends_on:
       - zookeeper
     ports:
-      - 8812:8123
+      - 8112:8123
       - 9012:9000
     volumes:
       - "/home/ttg/clickhouse-cluster/data/volume2:/var/lib/clickhouse"
@@ -33,7 +33,7 @@ services:
     depends_on:
       - zookeeper
     ports:
-      - 8813:8123
+      - 8113:8123
       - 9013:9000
     volumes:
       - "/home/ttg/clickhouse-cluster/data/volume3:/var/lib/clickhouse"
